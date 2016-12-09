@@ -3,7 +3,7 @@
 # ttpy
 Test templating tool for python projects.
 
-This tool is intended to quickly template unit tests for pytest. The resulting template does not contain any useful test logic, but saves the programmer time fetching function names and provides motivating for good test coverage (in the sense of having at least a test per function in source).
+This tool is intended to quickly template unit tests for pytest. The resulting template does not contain any useful test logic, but saves the programmer time fetching function names and provides motivation for good test coverage.
 
 ## Use
 
