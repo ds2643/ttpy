@@ -1,3 +1,5 @@
+*Please note this project is not yet complete or ready for use.*
+
 # ttpy
 Test templating tool for python projects.
 
