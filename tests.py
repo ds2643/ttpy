@@ -15,8 +15,20 @@ def test_collect_f_names():
     contents_as_expected = ("foo" in result and "bar" in result and "baz" in result)
     assert (len(result) == EXPECTED_NO_FUNCTIONS and contents_as_expected)
 
-def test_template_test_str():
+def test_template_test_name():
     sample_func_name = "foo"
-    actual = m.template_test_str(sample_func_name)
+    actual = m.template_test_name(sample_func_name)
     EXPECTED = "test_foo"
     assert (actual == EXPECTED)
+
+def test_test_str():
+    # TODO write test
+    assert false
+
+def test_generate_test_program():
+    # TODO write test
+    assert false
+
+def test_write_to_file():
+    # TODO write test
+    assert false
