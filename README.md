@@ -17,8 +17,8 @@ ttpy parses the source file to find functions than constructs a test template fo
 *in source:*
 ```python
 def append(x, xs):
-''' add something to a list '''
-return x ++ xs```
+    ''' add something to a list '''
+    return x + xs ```
 
 *result:*
     ```python
