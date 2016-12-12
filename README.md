@@ -5,6 +5,7 @@ A script for templating pytest unit tests for Python projects in an automated ma
 The program uses a simple command-line interface.
 
 at the command line, indicate the source file for which to generate a pytest template.
+
 ``` $> python ttpy [source] [output] ```
 
 ``` $> python ttpy main.py tests.py ```
