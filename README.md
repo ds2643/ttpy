@@ -6,11 +6,11 @@ The program uses a simple command-line interface.
 
 at the command line, indicate the source file for which to generate a pytest template.
 
-    ` $> python ttpy [source] [output] `
+    $> python ttpy [source] [output]
 
 for example
 
-    ` $> python ttpy main.py tests.py `
+    $> python ttpy main.py tests.py
 
 ttpy parses the source file to find functions than constructs a test template for each function in the source file.
 *in source:*
