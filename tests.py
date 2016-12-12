@@ -23,13 +23,7 @@ def test_template_test_name():
     assert (actual == EXPECTED)
 
 def test_test_str():
-    # TODO write test
-    assert false
-
-def test_generate_test_program():
-    # TODO write test
-    assert false
-
-def test_write_to_file():
-    # TODO write test
-    assert false
+    EXAMPLE_F_NAME = "foo"
+    expected_result = "def test_" + EXAMPLE_F_NAME + "():\n#TODO: write test...\nassert (false)"
+    actual_result = test_str(EXAMPLE_F_NAME)
+    assert (actual_result == expected_result)
