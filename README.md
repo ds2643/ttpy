@@ -14,19 +14,19 @@ for example, one may call ttpy to generate tests for a file main.py with the res
 
 ttpy parses the source file to find functions than constructs a test template for each function in the source file.
 
-*in source:*
+*in main.py:*
 ```python
 def append(x, xs):
     ''' add something to a list '''
     return x + xs
 ```
 
-*result:*
-    ```python
-       def test_append():
-        # TODO: write test!
-        assert(false)
-    ```
+*result in test.py*
+```python
+def test_append():
+    # TODO: write test!
+    assert(false)
+```
 ## Dependencies
 The tool assumes unit tests will be written in PyTest (), an alternative to Python's built-in unittest module.
 
