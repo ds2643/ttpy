@@ -12,16 +12,16 @@ for example, one may call ttpy to generate tests for a file main.py with the res
 
     $> python ttpy main.py tests.py
 
-ttpy parses the source file to find functions than constructs a test template for each function in the source file.
+ttpy parses the source file to find functions names, then writes a test file with a function corresponding to each function in the source file.
 
-*in main.py:*
+For instance, a function called `append()` main.py would yield a corresponding function called `test_append()` in the test file.
+
 ```python
 def append(x, xs):
     ''' add something to a list '''
     return x + xs
 ```
 
-*result in test.py*
 ```python
 def test_append():
     # TODO: write test!
