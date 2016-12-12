@@ -1,26 +1,32 @@
-*Please note this project is not yet complete or ready for use.*
-
-# ttpy
-Test templating tool for python projects.
-
-This tool is intended to quickly template unit tests for pytest. The resulting template does not contain any useful test logic, but saves the programmer time fetching function names and provides motivation for good test coverage.
+# ttpy: test templating for Python projects
+A script for templating pytest unit tests for Python projects in an automated manner. Given a Python program, ttpy traverses the abstract syntax tree for function names to generate a file containing empty test cases for each function. This approach saves the programmer wasted time searching the source file for all functions.
 
 ## Use
+The program uses a simple command-line interface.
 
 at the command line, indicate the source file for which to generate a pytest template.
-`$> python ttpy [source] [output]`
-e.g.,
-`$> python ttpy main.py tests.py`
+``` $> python ttpy [source] [output] ```
+
+``` $> python ttpy main.py tests.py ```
 
 ttpy parses the source file to find functions than constructs a test template for each function in the source file.
 *in source:*
-    `def append(x, xs):
+    ```python
+	def append(x, xs):
         ''' add something to a list '''
         return x ++ xs
-    `
+    ```
 *result:*
-    `def test_append():
+    ```python
+       def test_append():
         # TODO: write test!
         assert(false)
-    `
+    ```
+## Dependencies
+The tool assumes unit tests will be written in PyTest (), an alternative to Python's built-in unittest module.
 
+Pytest features a number of advantages over unittest with [arguably better (or equivilent) functionality](http://halfcooked.com/presentations/pyconau2013/why_I_use_pytest.html).
+
+Instructions for installing and using Pytest can be found [here](http://doc.pytest.org/en/latest/getting-started.html)
+
+Additionally, this script uses [RedBaron](https://github.com/PyCQA/redbaron) to traverse the source file's abstract syntax tree.
