@@ -6,19 +6,20 @@ The program uses a simple command-line interface.
 
 at the command line, indicate the source file for which to generate a pytest template.
 
-    $> python ttpy [source] [output]
+    $> python ttpy [source path] [result path]
 
-for example
+for example, one may call ttpy to generate tests for a file main.py with the result saved to test.py as follows:
 
     $> python ttpy main.py tests.py
 
 ttpy parses the source file to find functions than constructs a test template for each function in the source file.
+
 *in source:*
-    ```python
-	def append(x, xs):
-        ''' add something to a list '''
-        return x ++ xs
-    ```
+```python
+def append(x, xs):
+''' add something to a list '''
+return x ++ xs```
+
 *result:*
     ```python
        def test_append():
