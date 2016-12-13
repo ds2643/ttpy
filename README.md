@@ -33,6 +33,6 @@ The tool assumes unit tests will be written in PyTest (), an alternative to Pyth
 
 Pytest features a number of advantages over unittest with [arguably better (or equivilent) functionality](http://halfcooked.com/presentations/pyconau2013/why_I_use_pytest.html).
 
-Instructions for installing and using Pytest can be found [here](http://doc.pytest.org/en/latest/getting-started.html)
+Instructions for installing and using Pytest can be found [here](http://doc.pytest.org/en/latest/getting-started.html).
 
 Additionally, this script uses [RedBaron](https://github.com/PyCQA/redbaron) to traverse the source file's abstract syntax tree.
