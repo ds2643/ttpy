@@ -27,7 +27,7 @@ def test_str(func_name):
     def_line = "def " + name + "():" + new_line
     doc_string = indent + "\"\"\"" + "testing: " + func_name +"\"\"\"" + new_line
     reminder = indent + "# TODO: write test..." + new_line
-    failing_assertion = indent + "assert (false)" + new_line
+    failing_assertion = indent + "assert False" + new_line
     res = def_line + doc_string + reminder + failing_assertion + new_line
     assert(isinstance(res, str))
     return res
