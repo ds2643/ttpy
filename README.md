@@ -29,7 +29,7 @@ def test_append():
     assert False
 ```
 ## Dependencies
-The tool assumes unit tests will be written in PyTest (), an alternative to Python's built-in unittest module.
+The tool assumes unit tests will be written in [PyTest](http://doc.pytest.org/en/latest/), an alternative to Python's built-in unittest module.
 
 Pytest features a number of advantages over unittest with [arguably better (or equivalent) functionality](http://halfcooked.com/presentations/pyconau2013/why_I_use_pytest.html).
 
