@@ -26,7 +26,7 @@ def append(x, xs):
 def test_append():
     ''' testing append '''
     # TODO: write test!
-    assert(false)
+    assert False
 ```
 ## Dependencies
 The tool assumes unit tests will be written in PyTest (), an alternative to Python's built-in unittest module.
