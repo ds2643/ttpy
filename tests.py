@@ -24,6 +24,6 @@ def test_template_test_name():
 
 def test_test_str():
     EXAMPLE_F_NAME = "foo"
-    expected_result = "def test_" + EXAMPLE_F_NAME + "():\n#TODO: write test...\nassert (false)"
+    expected_result = "def test_" + EXAMPLE_F_NAME + "():\n#TODO: write test...\nassert False"
     actual_result = test_str(EXAMPLE_F_NAME)
     assert (actual_result == expected_result)
