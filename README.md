@@ -35,6 +35,3 @@ Pytest features a number of advantages over unittest with [arguably better (or e
 Instructions for installing and using Pytest can be found [here](http://doc.pytest.org/en/latest/getting-started.html)
 
 Additionally, this script uses [RedBaron](https://github.com/PyCQA/redbaron) to traverse the source file's abstract syntax tree.
-
-## Issue
-AST-walking approach towards finding all function names in a source file does not currently take into account that some functions are defined in the context of classes. Thus, running this script on an object oriented program ignores the class context of methods, simply treating these methods as atomic functions.
