@@ -1,15 +1,14 @@
 # pytest unit tests
-
 import main as m
 import redbaron as rb
 
 def test_program_as_ast():
     result = m.program_as_ast("./data/example.py") # TODO: relative file path
-    assert (isinstance(result, redbaron.redbaron.RedBaron))
+    assert (isinstance(result, rb.RedBaron))
 
 def test_collect_f_names():
     PATH = "./data/example.py"
-    str_repr = open(path, 'r').read()
+    str_repr = open(PATH, 'r').read()
     ast = rb.RedBaron(str_repr)
     result = m.collect_f_names(ast)
     EXPECTED_NO_FUNCTIONS = 3
@@ -24,6 +23,6 @@ def test_template_test_name():
 
 def test_test_str():
     EXAMPLE_F_NAME = "foo"
-    expected_result = "def test_" + EXAMPLE_F_NAME + "():\n#TODO: write test...\nassert False"
-    actual_result = test_str(EXAMPLE_F_NAME)
+    expected_result = "def test_" + EXAMPLE_F_NAME + "():\n    ''' testing: foo '''\n    # TODO: write test...\n    assert False\n\n"
+    actual_result = m.test_str(EXAMPLE_F_NAME)
     assert (actual_result == expected_result)
