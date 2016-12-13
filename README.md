@@ -31,7 +31,7 @@ def test_append():
 ## Dependencies
 The tool assumes unit tests will be written in PyTest (), an alternative to Python's built-in unittest module.
 
-Pytest features a number of advantages over unittest with [arguably better (or equivilent) functionality](http://halfcooked.com/presentations/pyconau2013/why_I_use_pytest.html).
+Pytest features a number of advantages over unittest with [arguably better (or equivalent) functionality](http://halfcooked.com/presentations/pyconau2013/why_I_use_pytest.html).
 
 Instructions for installing and using Pytest can be found [here](http://doc.pytest.org/en/latest/getting-started.html).
 
